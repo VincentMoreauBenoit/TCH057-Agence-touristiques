@@ -10,48 +10,74 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="212dp"
-        android:layout_height="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="107dp"
+        android:layout_marginBottom="75dp"
         android:text="Page de connexion"
         android:textSize="24sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="99dp"
-        tools:layout_editor_absoluteY="36dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textConnexionEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/textConnexionEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="93dp"
+        android:layout_marginEnd="109dp"
+        android:layout_marginBottom="25dp"
         android:ems="10"
         android:hint="exemple@hotlook.com"
         android:inputType="text|textEmailAddress"
-        tools:layout_editor_absoluteX="92dp"
-        tools:layout_editor_absoluteY="143dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textMDPConnexion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
         android:id="@+id/textMDPConnexion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="93dp"
+        android:layout_marginEnd="109dp"
+        android:layout_marginBottom="331dp"
         android:ems="10"
         android:hint="mot de passe"
         android:inputType="textPassword"
-        tools:layout_editor_absoluteX="92dp"
-        tools:layout_editor_absoluteY="214dp" />
+        app:layout_constraintBottom_toTopOf="@+id/btnConnexion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textConnexionEmail" />
 
     <Button
         android:id="@+id/btnConnexion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="148dp"
+        android:layout_marginEnd="147dp"
         android:text="Connexion"
-        tools:layout_editor_absoluteX="147dp"
-        tools:layout_editor_absoluteY="590dp" />
+        app:layout_constraintBottom_toTopOf="@+id/btnEnregistrer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMDPConnexion" />
 
     <Button
         android:id="@+id/btnEnregistrer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="147dp"
+        android:layout_marginBottom="45dp"
         android:text="Enregistrer"
-        tools:layout_editor_absoluteX="146dp"
-        tools:layout_editor_absoluteY="638dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnConnexion" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

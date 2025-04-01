@@ -11,31 +11,43 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="109dp"
+        android:layout_marginEnd="109dp"
         android:text="Page d'inscription"
         android:textSize="24sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="109dp"
-        tools:layout_editor_absoluteY="41dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textNomInscription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/textNomInscription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="97dp"
+        android:layout_marginEnd="104dp"
         android:ems="10"
         android:hint="nom"
         android:inputType="text"
-        tools:layout_editor_absoluteX="97dp"
-        tools:layout_editor_absoluteY="88dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textPrenomInscription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <EditText
         android:id="@+id/textPrenomInscription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="97dp"
+        android:layout_marginEnd="104dp"
         android:ems="10"
         android:hint="prénom"
         android:inputType="text"
-        tools:layout_editor_absoluteX="97dp"
-        tools:layout_editor_absoluteY="141dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textCourrielInscription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textNomInscription" />
 
     <EditText
         android:id="@+id/textAgeInscription"
@@ -51,57 +63,84 @@
         android:id="@+id/textCourrielInscription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="104dp"
         android:ems="10"
         android:hint="exemple@gmail.com"
         android:inputType="textEmailAddress"
-        tools:layout_editor_absoluteX="97dp"
-        tools:layout_editor_absoluteY="199dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textAgeInscription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textAgeInscription"
+        app:layout_constraintTop_toBottomOf="@+id/textPrenomInscription" />
 
     <EditText
         android:id="@+id/textTelephoneInscription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="98dp"
+        android:layout_marginEnd="103dp"
         android:ems="10"
         android:hint="(000)-000-9999 "
         android:inputType="phone"
-        tools:layout_editor_absoluteX="98dp"
-        tools:layout_editor_absoluteY="301dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textAdresseInscription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textAgeInscription" />
 
     <EditText
         android:id="@+id/textAdresseInscription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="97dp"
+        android:layout_marginEnd="104dp"
         android:ems="10"
         android:hint="adresse"
         android:inputType="text"
-        tools:layout_editor_absoluteX="97dp"
-        tools:layout_editor_absoluteY="369dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textMDPInscription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTelephoneInscription" />
 
     <EditText
         android:id="@+id/textMDPInscription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="97dp"
+        android:layout_marginEnd="104dp"
         android:ems="10"
         android:hint="mot de passe"
         android:inputType="textPassword"
-        tools:layout_editor_absoluteX="97dp"
-        tools:layout_editor_absoluteY="485dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textMDPConfirmationInscription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textAdresseInscription" />
 
     <EditText
         android:id="@+id/textMDPConfirmationInscription"
         android:layout_width="224dp"
         android:layout_height="44dp"
+        android:layout_marginStart="98dp"
+        android:layout_marginEnd="89dp"
         android:ems="10"
         android:hint="confirmer le mot de passe"
         android:inputType="textPassword"
-        tools:layout_editor_absoluteX="98dp"
-        tools:layout_editor_absoluteY="560dp" />
+        app:layout_constraintBottom_toTopOf="@+id/btnConfirmer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMDPInscription" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnConfirmer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="155dp"
-        tools:layout_editor_absoluteY="634dp" />
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="165dp"
+        android:layout_marginBottom="49dp"
+        android:text="Confirmer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMDPConfirmationInscription" />
 </androidx.constraintlayout.widget.ConstraintLayout>
